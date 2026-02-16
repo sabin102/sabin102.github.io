@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">DevPortfolio.</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="fas fa-moon"></button>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="container">
+        <h2 style="text-align: center; margin-bottom: 3rem;">My Projects</h2>
+
+        <!-- This container is where JS will inject the project cards -->
+        <div id="projects-container" class="projects-grid">
+            <!-- Projects load here automatically -->
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
