@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a192f">
+
+    <!-- SEO METADATA -->
+    <title>Sabin Bhandari | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Sabin Bhandari, a Frontend Developer and Software Engineer from Nepal.">
+    <meta name="keywords"
+        content="Sabin Bhandari, Portfolio, Frontend Developer, Software Engineer, Nepal, Web Development">
+    <meta name="author" content="Sabin Bhandari">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sabinbhandari.me/">
+    <link rel="icon" type="image/png" href="assets/images/profile.png">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sabinbhandari.me/">
+    <meta property="og:title" content="Sabin Bhandari | Creator and Web Developer">
+    <meta property="og:description"
+        content="Portfolio of Sabin Bhandari, a Frontend Developer and Software Engineer from Nepal.">
+    <meta property="og:image" content="https://sabinbhandari.me/assets/images/profile.png">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sabinbhandari.me/">
+    <meta name="twitter:title" content="Sabin Bhandari | Portfolio">
+    <meta name="twitter:description"
+        content="Portfolio of Sabin Bhandari, a Frontend Developer and Software Engineer from Nepal.">
+    <meta name="twitter:image" content="https://sabinbhandari.me/assets/images/profile.png">
+
+    <!-- FONTS & ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE RECAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+
+    <!-- 1. LOADING SCREEN -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- 2. SCROLL TO TOP BUTTON -->
+    <div id="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- 3. NAVIGATION BAR -->
+    <nav>
+        <a href="#home" class="logo">
+            <img src="assets/images/profile.png" alt="Sabin Bhandari">
+        </a>
+
+        <!-- The Hamburger Button -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- The Links List -->
+        <ul class="nav-links" id="navLinks">
+            <!-- onclick="toggleMenu()" closes the menu when you click a link -->
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#content" onclick="toggleMenu()">Content</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- 4. HERO SECTION -->
+        <section id="home" class="hero reveal">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <br><span class="typewriter-text" id="typewriter"></span></h1>
+                    <p>Building digital experiences with code and creativity.</p>
+
+                    <!-- Buttons -->
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn">View Projects</a>
+                        <a href="assets/resume.pdf" target="_blank" class="btn btn-outline">
+                            Download CV <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-img-container">
+                    <img src="assets/images/profile.png" alt="Sabin Profile" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. ABOUT SECTION -->
+        <section id="about" class="reveal">
+            <div class="container">
+                <div class="about-card">
+                    <!-- Image with Blue Border -->
+                    <div class="about-img-wrapper">
+                        <img src="assets/images/PP.jpeg" alt="Sabin Bhandari" class="about-img">
+                    </div>
+
+                    <div class="about-content">
+                        <h2 class="about-heading">I'm a Developer & Creative Thinker</h2>
+                        <p class="about-text">
+                            Hello! I'm <strong>Sabin</strong>, a passionate developer based in Nepal.
+                            I specialize in building high-quality websites and solving real-world problems.
+                            With a strong foundation in C, C++, and Modern Web Technologies, I enjoy turning complex
+                            ideas
+                            into elegant solutions.
+                        </p>
+
+                        <!-- SKILLS SECTION (Restored) -->
+                        <div style="margin: 25px 0;">
+                            <span class="badge"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="badge"><i class="fas fa-code"></i> C++</span>
+                            <span class="badge"><i class="fab fa-windows"></i> .NET</span>
+                        </div>
+
+                        <!-- STATS SECTION -->
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <h3>2+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>10+</h3>
+                                <p>Projects Done</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>5+</h3>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PROJECTS SECTION -->
+        <section id="projects" class="reveal">
+            <div class="section-title">Projects</div>
+            <div class="projects-grid">
+
+                <!-- Project 1: Bagh-Chal -->
+                <div class="project-card">
+                    <img src="assets/images/baghchal.jpg" alt="Bagh-Chal" class="project-img">
+                    <div class="project-content">
+                        <h3>Bagh-Chal Game</h3>
+                        <p style="font-size: 0.9rem; margin-top: 5px; color: #aaa;">
+                            A digital version of the traditional Nepali board game built in C.
+                            Features include Undo/Redo, Save/Load, and AI logic.
+                        </p>
+                        <div style="margin-top: 15px;">
+                            <span class="badge">C Language</span> <span class="badge">Game Dev</span>
+                        </div>
+                        <a href="https://github.com/sabin102/Bagh-Chal" target="_blank" class="btn"
+                            style="margin-top: 15px; padding: 8px 20px; font-size: 0.8rem;">View Code <i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2: SIMS -->
+                <div class="project-card">
+                    <img src="assets/images/student.jpg" alt="Student System" class="project-img">
+                    <div class="project-content">
+                        <h3>Student Info System</h3>
+                        <p style="font-size: 0.9rem; margin-top: 5px; color: #aaa;">
+                            A comprehensive management system built with C++.
+                            Handles Student/Teacher records, Attendance, and Exams.
+                        </p>
+                        <div style="margin-top: 15px;">
+                            <span class="badge">C++</span> <span class="badge">OOP</span>
+                        </div>
+                        <a href="https://github.com/sabin102/Student-Information-Management-System-SIMS-"
+                            target="_blank" class="btn"
+                            style="margin-top: 15px; padding: 8px 20px; font-size: 0.8rem;">View Code <i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Block Master -->
+                <div class="project-card">
+                    <img src="assets/images/blockmaster.jpg" alt="Block Master" class="project-img">
+                    <div class="project-content">
+                        <h3>Block Master: The Void</h3>
+                        <p style="font-size: 0.9rem; margin-top: 5px; color: #aaa;">
+                            An advanced puzzle game built with C# .NET.
+                            Includes a Level Editor, Story Mode, and particle effects.
+                        </p>
+                        <div style="margin-top: 15px;">
+                            <span class="badge">C# .NET</span> <span class="badge">Windows Forms</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px; font-size: 0.8rem;">View
+                            Demo <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4: Valley Institute -->
+                <div class="project-card">
+                    <img src="assets/images/valley.png" alt="Valley Institute" class="project-img"
+                        style="object-fit: cover;">
+                    <div class="project-content">
+                        <h3>Valley Institute</h3>
+                        <p style="font-size: 0.9rem; margin-top: 5px; color: #aaa;">
+                            A live educational website for an institute offering CMAT, IELTS, and Korean Language
+                            classes.
+                        </p>
+                        <div style="margin-top: 15px;">
+                            <span class="badge">Web Design</span> <span class="badge">Live Project</span>
+                        </div>
+                        <a href="https://valleyinstitute.com.np/" target="_blank" class="btn"
+                            style="margin-top: 15px; padding: 8px 20px; font-size: 0.8rem; background-color: #22c55e;">Visit
+                            Site <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. SOCIAL FEED -->
+        <section id="content" class="reveal">
+            <div class="section-title">Social Feed</div>
+            <div style="text-align: center;">
+                <script src="https://elfsightcdn.com/platform.js" async></script>
+                <div class="elfsight-app-b02186b1-8a76-43bd-99b2-ab0a98f6fc78" data-elfsight-app-lazy></div>
+            </div>
+        </section>
+
+        <!-- 8. CONTACT SECTION -->
+        <section id="contact" class="reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+
+                <!-- Left Info Panel -->
+                <div class="contact-info">
+                    <div>
+                        <h3>Let's Chat</h3>
+                        <p>Whether you have a question, a project idea, or just want to say hi, I'd love to hear from
+                            you!
+                        </p>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@sabinbhandari.me</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nepal</span>
+                        </div>
+                    </div>
+                    <div class="social-links-contact">
+                        <a href="https://github.com/sabin102" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/sabin-bhandari-a19375399" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/sabinodyssey" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Form Panel -->
+                <div class="contact-form-wrapper">
+                    <!-- IMPORTANT: Replace with YOUR Formspree ID -->
+                    <form id="contact-form" action="https://formspree.io/f/mjgergky" method="POST" novalidate>
+
+                        <!-- Name -->
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" id="nameInput" name="name" class="styled-input" placeholder="John Doe"
+                                oninput="validateRealTime(this)">
+                            <div class="error-tooltip" id="nameError">
+                                <i class="fas fa-exclamation-circle"></i> <span>Please enter a valid name (Letters
+                                    only).</span>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label>Your Email</label>
+                            <input type="email" id="emailInput" name="email" class="styled-input"
+                                placeholder="john@example.com">
+                            <div class="error-tooltip" id="emailError">
+                                <i class="fas fa-exclamation-circle"></i> <span>Please enter a valid email address with
+                                    '@'.</span>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea id="messageInput" name="message" class="styled-input" rows="5"
+                                placeholder="Tell me about your project..."></textarea>
+                            <div class="error-tooltip" id="msgError">
+                                <i class="fas fa-exclamation-circle"></i> <span>Please write a message.</span>
+                            </div>
+                        </div>
+
+                        <!-- reCAPTCHA -->
+                        <div class="form-group" style="margin-bottom: 25px;">
+                            <div class="g-recaptcha" data-sitekey="6LdbtG0sAAAAABAGwngV7LnnUgdnDmAq39fh0WWI"
+                                data-theme="dark"></div>
+                        </div>
+
+                        <!-- Button & Success Message -->
+                        <button type="submit" class="btn" style="width: 100%; border-radius: 8px;">Send Message</button>
+                        <div id="success-msg" class="success-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="footer-text">&copy; 2024 Sabin Bhandari. All rights reserved.</p>
+    </footer>
+
+    <!-- 9. JAVASCRIPT LOGIC -->
+    <script>
+        // --- 1. Mobile Menu Toggle ---
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+        }
+
+        // --- 2. Loader ---
+        window.addEventListener('load', () => {
+            document.getElementById('loader').style.display = 'none';
+        });
+
+        // --- 3. Scroll To Top ---
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('scrollTop');
+            if (window.scrollY > 300) btn.style.display = 'block';
+            else btn.style.display = 'none';
+        });
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+        // --- 4. Typewriter Effect ---
+        const words = ["Sabin Bhandari", "Frontend Developer", "Software Engineer"];
+        const typeWriterElement = document.getElementById('typewriter');
+        let wordIndex = 0; let charIndex = 0; let isDeleting = false;
+
+        function typeEffect() {
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                typeWriterElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typeWriterElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true; setTimeout(typeEffect, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false; wordIndex = (wordIndex + 1) % words.length; setTimeout(typeEffect, 500);
+            } else {
+                setTimeout(typeEffect, isDeleting ? 100 : 150);
+            }
+        }
+        setTimeout(typeEffect, 1000);
+
+        // --- 5. Scroll Reveal ---
+        const revealOnScroll = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach((reveal) => {
+                if (reveal.getBoundingClientRect().top < window.innerHeight - 150) {
+                    reveal.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+
+        // --- 6. Form Validation & Sending ---
+        const form = document.getElementById('contact-form');
+        const nameInput = document.getElementById('nameInput');
+        const emailInput = document.getElementById('emailInput');
+        const msgInput = document.getElementById('messageInput');
+        const successMsg = document.getElementById('success-msg');
+
+        function validateRealTime(input) {
+            input.value = input.value.replace(/[^a-zA-Z\s\-\'\u00C0-\u024F]/g, "");
+        }
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            let isValid = true;
+            successMsg.style.display = 'none';
+
+            // Check Inputs
+            if (!nameInput.value.trim()) { showError('nameError'); isValid = false; } else { hideError('nameError'); }
+            if (!emailInput.value.includes('@')) { showError('emailError'); isValid = false; } else { hideError('emailError'); }
+            if (!msgInput.value.trim()) { showError('msgError'); isValid = false; } else { hideError('msgError'); }
+
+            // Check Captcha
+            if (grecaptcha.getResponse().length === 0) { alert('Please verify you are human!'); isValid = false; }
+
+            if (isValid) {
+                const btn = form.querySelector('button');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+                btn.disabled = true;
+
+                fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                }).then(response => {
+                    if (response.ok) {
+                        const fullName = nameInput.value;
+                        const firstName = fullName.split(' ')[0];
+                        successMsg.innerHTML = `<i class="fas fa-check-circle" style="margin-right:8px;"></i> Thanks <strong>${firstName}</strong>! Message sent.`;
+                        successMsg.style.display = 'block';
+                        form.reset();
+                        grecaptcha.reset();
+                        btn.innerHTML = 'Sent Successfully!';
+                        setTimeout(() => {
+                            successMsg.style.display = 'none';
+                            btn.innerHTML = originalText;
+                            btn.disabled = false;
+                        }, 6000);
+                    } else {
+                        alert("Oops! Problem sending message.");
+                        btn.innerHTML = originalText;
+                        btn.disabled = false;
+                    }
+                }).catch(error => {
+                    alert("Network Error.");
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                });
+            }
+        });
+
+        function showError(id) {
+            document.getElementById(id).style.display = 'block';
+            document.getElementById(id).previousElementSibling.classList.add('error-border');
+        }
+        function hideError(id) {
+            document.getElementById(id).style.display = 'none';
+            document.getElementById(id).previousElementSibling.classList.remove('error-border');
+        }
+
+        [nameInput, emailInput, msgInput].forEach(input => {
+            input.addEventListener('input', () => {
+                input.classList.remove('error-border');
+                if (input.nextElementSibling.classList.contains('error-tooltip')) {
+                    input.nextElementSibling.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
